@@ -1,0 +1,35 @@
+{
+  "name": "playwright-pom-typescript",
+  "version": "1.0.0",
+  "description": "Playwright Page Object Model framework with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:login": "npx playwright test tests/login-feature/",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright show-report",
+    "record": "npx tsx recorder/dom-recorder.ts",
+    "record:url": "npx tsx recorder/dom-recorder.ts",
+    "record:steps": "npx tsx recorder/step-recorder.ts"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "pom",
+    "e2e",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^25.4.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
